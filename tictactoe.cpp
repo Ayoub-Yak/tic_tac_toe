@@ -31,28 +31,28 @@ int in(char c, char *tab)
 
 int win(char *tab)
 {
-    int test=0;
+    int test = 0;
     if (in('0', tab))
     {
         if (in('1', tab))
         {
             if (in('2', tab))
             {
-                test=1;
+                test = 1;
             }
         }
         else if (in('4', tab))
         {
             if (in('8', tab))
             {
-                test=1;
+                test = 1;
             }
         }
         else if (in('3', tab))
         {
             if (in('6', tab))
             {
-                test=1;
+                test = 1;
             }
         }
     }
@@ -62,7 +62,7 @@ int win(char *tab)
         {
             if (in('7', tab))
             {
-                test=1;
+                test = 1;
             }
         }
     }
@@ -72,7 +72,7 @@ int win(char *tab)
         {
             if (in('8', tab))
             {
-                test=1;
+                test = 1;
             }
         }
     }
@@ -82,7 +82,7 @@ int win(char *tab)
         {
             if (in('5', tab))
             {
-                test=1;
+                test = 1;
             }
         }
     }
@@ -92,7 +92,7 @@ int win(char *tab)
         {
             if (in('8', tab))
             {
-                test=1;
+                test = 1;
             }
         }
     }
@@ -102,12 +102,15 @@ int win(char *tab)
         {
             if (in('6', tab))
             {
-                test=1;
+                test = 1;
             }
         }
-    }else{test=0;}
+    }
+    else
+    {
+        test = 0;
+    }
     return test;
-    
 }
 
 int main()
@@ -131,7 +134,6 @@ int main()
     cout << "   |   |   " << endl;
     cout << "player x play :";
     cin >> c;
-   
 
     switch (c)
     {
@@ -388,17 +390,16 @@ int main()
         clearScreen();
 
         cout << "   TicTacToe Game" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
-    cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
+        cout << "___|___|___" << endl;
 
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
-    cout << "___|___|___" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
-    cout << "   |   |   " << endl;
-        
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
+        cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
+        cout << "   |   |   " << endl;
 
         cout << "player X win ....";
         return 1;
@@ -462,16 +463,16 @@ int main()
         clearScreen();
 
         cout << "   TicTacToe Game" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
-    cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
+        cout << "___|___|___" << endl;
 
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
-    cout << "___|___|___" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
-    cout << "   |   |   " << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
+        cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
+        cout << "   |   |   " << endl;
         cout << "player O win ....";
         return 1;
     }
@@ -534,16 +535,16 @@ int main()
         clearScreen();
 
         cout << "   TicTacToe Game" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
-    cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
+        cout << "___|___|___" << endl;
 
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
-    cout << "___|___|___" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
-    cout << "   |   |   " << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
+        cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
+        cout << "   |   |   " << endl;
         cout << "player X win ....";
         return 1;
     }
@@ -606,16 +607,16 @@ int main()
         clearScreen();
 
         cout << "   TicTacToe Game" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
-    cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
+        cout << "___|___|___" << endl;
 
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
-    cout << "___|___|___" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
-    cout << "   |   |   " << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
+        cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
+        cout << "   |   |   " << endl;
         cout << "player O win ....";
         return 1;
     }
@@ -678,16 +679,16 @@ int main()
         clearScreen();
 
         cout << "   TicTacToe Game" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
-    cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
+        cout << "___|___|___" << endl;
 
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
-    cout << "___|___|___" << endl;
-    cout << "   |   |   " << endl;
-    cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
-    cout << "   |   |   " << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[3] << " |" << " " << tictac[4] << " |" << " " << tictac[5] << " " << endl;
+        cout << "___|___|___" << endl;
+        cout << "   |   |   " << endl;
+        cout << " " << tictac[6] << " |" << " " << tictac[7] << " |" << " " << tictac[8] << " " << endl;
+        cout << "   |   |   " << endl;
         cout << "player X win ....";
         return 1;
     }
@@ -695,7 +696,7 @@ int main()
 
     clearScreen();
 
-        cout << "   TicTacToe Game" << endl;
+    cout << "   TicTacToe Game" << endl;
     cout << "   |   |   " << endl;
     cout << " " << tictac[0] << " |" << " " << tictac[1] << " |" << " " << tictac[2] << " " << endl;
     cout << "___|___|___" << endl;
